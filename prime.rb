@@ -9,7 +9,7 @@ def prime?(num)
   results = []
 
   possible_factors.each do |i|
-    if num % i == 0
+    if num % i == 0 && results.length < 2
       results.push(i)
     end
   end
